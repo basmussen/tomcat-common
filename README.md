@@ -1,7 +1,7 @@
 Tomcat Common
 =============
 
-Enables URL as JNDI support for Tomcat. You can configure your applications for different environments like local dev, tests server, integration tests and production.
+Enables JNDI URL support for Tomcat. You can configure your applications for different environments like local dev, tests server, integration tests and production. This was tested with Tocmat 7.
 
 
 ## Building from source
