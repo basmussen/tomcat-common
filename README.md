@@ -7,7 +7,7 @@ Enables JNDI URL support for Tomcat. You can configure your applications for dif
 ## Building from source
 
 
-### check out sources
+### Check out sources
 `git clone https://github.com/basmussen/tomcat-common.git`
 
 ### Maven build
@@ -22,12 +22,14 @@ Enables JNDI URL support for Tomcat. You can configure your applications for dif
 Edit your tomcat context.xml
 `vi TOMCAT_HOME/context.xml`
 
-Add your resource to file
+Add the resource element to your context file
 
 ```
 <Context>
+  ...
   <Resource auth="Container" factory="com.benasmussen.jndi.url.URLFactory" 
   name="url/MyUrl" type="java.net.URL" url="file:///your/path/to/file"/>
+  ...
 </Context>
 ```
 
