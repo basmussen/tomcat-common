@@ -1,4 +1,4 @@
-tomcat-common
+Tomcat Common
 =============
 
 
@@ -15,7 +15,7 @@ tomcat-common
 
 
 ### Copy the lib to your tomcat instance
-`cp tomcat-common-0.0.1.jar TOMCAT_HOME/lib`
+`cp PROJECT/target/tomcat-common-0.0.1.jar TOMCAT_HOME/lib`
 
 ## Tomcat configuration
 
@@ -24,18 +24,23 @@ Edit your tomcat context.xml
 
 Add your resource to file
 
+```
 <Context>
   <Resource auth="Container" factory="com.benasmussen.jndi.url.URLFactory" name="url/MyUrl" type="java.net.URL"    url="file:///your/path/to/file"/>
 </Context>
-
-
-
-## Webapplication configuration
-
+```
 
 ## Spring 3 configuration
 
+```
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+```
 
+```
+<jee:jndi-lookup id="myUrl" jndi-name="java:comp/env/url/MyUrl" expected-type="java.net.URL" />
+```
 
 
 
