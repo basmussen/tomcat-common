@@ -1,7 +1,9 @@
 Tomcat Common
 =============
 
-Enables JNDI URL support for Tomcat. You can configure your applications for different environments like local dev, tests server, integration tests and production. This was tested with Tocmat 7.
+Enables JNDI URL support for Tomcat. You can configure your applications for different environments like local dev, tests server, integration tests and production. 
+
+Tested with Tocmat 7
 
 
 ## Building from source
@@ -22,7 +24,7 @@ Enables JNDI URL support for Tomcat. You can configure your applications for dif
 Edit your tomcat context.xml
 `vi TOMCAT_HOME/context.xml`
 
-Add the resource element to your context file
+Add your resource element to the context file
 
 ```
 <Context>
@@ -32,6 +34,10 @@ Add the resource element to your context file
   ...
 </Context>
 ```
+
+Tocmat documentation: [JNDI how-to][]
+Tocmat documentation: [JNDI Custom Resource Factory][]
+
 
 ## Spring 3
 
@@ -58,4 +64,6 @@ The project is released under the [MIT License][].
 
 [MIT License]: http://opensource.org/licenses/MIT
 [@BenAsmussen]: https://twitter.com/BenAsmussen
+[JNDI how-to]: http://tomcat.apache.org/tomcat-7.0-doc/jndi-resources-howto.html
+[JNDI Custom Resource Factory]: http://tomcat.apache.org/tomcat-7.0-doc/jndi-resources-howto.html#Adding_Custom_Resource_Factories
 
