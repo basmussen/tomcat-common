@@ -1,7 +1,7 @@
 Tomcat Common
 =============
 
-
+Enables URL as JNDI support for Tomcat. You can configure your applications for different environments like local dev, tests server, integration tests and production.
 
 
 ## Building from source
@@ -31,7 +31,7 @@ Add your resource to file
 </Context>
 ```
 
-## Spring 3 configuration
+## Spring 3
 
 ```
 <beans xmlns="http://www.springframework.org/schema/beans" 
@@ -47,12 +47,13 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 ```
 
 
-
 ## Staying in touch
 Follow me [@BenAsmussen][] on Twitter. 
 
 ## License
-The project is released under  the [MIT Licence][].
+The project is released under the [MIT License][].
 
 
+[MIT License]: http://opensource.org/licenses/MIT
+[@BenAsmussen]: https://twitter.com/BenAsmussen
 
