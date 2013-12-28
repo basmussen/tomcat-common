@@ -35,8 +35,7 @@ Add your resource element to the context file
 </Context>
 ```
 
-Tocmat documentation: [JNDI how-to][]
-Tocmat documentation: [JNDI Custom Resource Factory][]
+Tocmat documentation [JNDI how-to][] and [JNDI Custom Resource Factory][].
 
 
 ## Spring 3
